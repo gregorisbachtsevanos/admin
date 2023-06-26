@@ -1,0 +1,41 @@
+@import "src/assets/scss/";
+
+.dropdown-container {
+	display: flex;
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+
+		.dropdown-btn {
+			color: white;
+			padding: 14px;
+			border: none;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: var(--sidebarColor);
+			min-width: 200px;
+			@include border(5px);
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+
+			img {
+				color: black;
+				padding: 12px;
+				text-decoration: none;
+				display: block;
+				cursor: pointer;
+				&:hover {
+					background-color: var(--sidebarColor);
+				}
+			}
+		}
+
+		&:hover .dropdown-content {
+			display: block;
+		}
+	}
+}

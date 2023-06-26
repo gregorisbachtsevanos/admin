@@ -1,0 +1,19 @@
+.label-container {
+	display: flex;
+	flex-direction: column;
+}
+.input-container {
+	width: 100%;
+	background-color: var(--sidebarColor);
+	background: linear-gradient(var(--sidebarColor), var(--bgColor)) padding-box,
+		linear-gradient(to right, var(--highlight1), var(--highlight2)) border-box;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	padding: 5px;
+	color: var(--textColor);
+	&:focus {
+		outline: none !important;
+		background: linear-gradient(var(--sidebarColor), var(--bgColor))
+			padding-box;
+	}
+}

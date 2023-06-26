@@ -1,0 +1,26 @@
+.settings_profile-container {
+	width: 100%;
+
+	form {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		.settings_input {
+			width: 50%;
+			padding: 0.5rem;
+		}
+		.settings_about-container {
+			padding: 0.5rem;
+			width: 100%;
+		}
+
+		.settings_select {
+			padding: 0.5rem;
+			width: 50%;
+		}
+
+		.settings_btn-container {
+			width: 100%;
+		}
+	}
+}

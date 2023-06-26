@@ -1,0 +1,10 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "install": "(cd server && npm run install) && (cd client && npm run install)",
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run dev"
+  }
+}

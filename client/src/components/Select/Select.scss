@@ -1,0 +1,30 @@
+@import "src/assets/scss";
+.settings_selection-container {
+	@include flex();
+	.selection_label {
+		width: 100%;
+		text-align: left;
+	}
+
+	.selection_select {
+		width: 100%;
+		background-color: var(--sidebarColor);
+		background: linear-gradient(var(--sidebarColor), var(--bgColor))
+				padding-box,
+			linear-gradient(to right, var(--highlight1), var(--highlight2))
+				border-box;
+		border-radius: 10px;
+		border: 1px solid transparent;
+		padding: 5px;
+		color: var(--textColor);
+
+		&:focus {
+			outline: none !important;
+		}
+
+		.selection_option {
+			background-color: var(--sidebarColor);
+			border-radius: 10px;
+		}
+	}
+}

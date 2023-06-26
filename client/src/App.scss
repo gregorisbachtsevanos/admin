@@ -1,0 +1,20 @@
+#app-container {
+	background-color: var(--bgColor);
+	// padding: 0 2.5rem;
+}
+
+.light-theme {
+	--highlight: #dc4f45;
+	--highlight1: #d63636;
+	--highlight2: #e26654;
+	--bgColor: #eaeaea;
+	--bgColorOpacity: #13121410;
+	--sidebarColor: #f0f0f0;
+	--textColor: #1c1c1c;
+	--highlightOpacity: #dc4f4518;
+}
+
+.block-application {
+	height: 100vh;
+	overflow: hidden !important;
+}

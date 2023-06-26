@@ -1,0 +1,187 @@
+@media only screen and (min-width: var(--tabletVp)) {
+	.preloader-container {
+		.precontainer {
+			display: flex;
+			align-items: center;
+			transform: scale(0.8);
+
+			.wr-preloader {
+				.items {
+					.ml5 {
+						display: flex;
+						justify-content: center;
+						transform: scale(0.9);
+					}
+				}
+			}
+		}
+	}
+
+	.sidebar-container {
+		width: 100%;
+		height: 10%;
+		position: fixed;
+
+		ul {
+			position: fixed;
+			// top: 83vh;
+			width: 60%;
+			flex-direction: row;
+			justify-content: space-between;
+			left: 50%;
+			transform: translateX(-50%);
+
+			li {
+				transform: scale(0.9);
+				height: max-content;
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	.home-container {
+		.nav-container {
+			padding: 0%;
+			nav {
+				.logo-icon {
+					img {
+						transform: scale(0.9);
+					}
+				}
+				ul {
+					li {
+						transform: scale(0.9);
+					}
+				}
+			}
+		}
+
+		.text-container {
+			padding: 0;
+			h2 {
+				margin-top: 7%;
+				.text-5xl {
+					font-size: 2rem;
+				}
+				.text-2xl {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.image-container {
+			img {
+				transform: scale(1);
+			}
+		}
+	}
+
+	.project-container {
+		.card {
+			width: 30%;
+			.card-body {
+				h1,
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+		:nth-child(5) {
+			display: none;
+		}
+	}
+
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		.intro {
+			width: 100%;
+
+			.intro-container {
+				p {
+					width: 100%;
+					margin: auto;
+					text-align: center;
+				}
+			}
+		}
+
+		.skills {
+			width: 100%;
+
+			.skills-container {
+				transform: scale(0.8);
+			}
+		}
+	}
+
+	.contact-container {
+		height: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 2rem;
+
+		.text-container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+
+			.intro-container {
+				P {
+					text-align: center;
+					width: 100%;
+					margin: auto;
+				}
+			}
+		}
+
+		.contact-form-container {
+			width: 60%;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.form {
+				flex-direction: column;
+				display: flex;
+
+				.email-container,
+				.text-container {
+					input {
+						font-size: 0.9rem;
+					}
+					label {
+						span {
+							font-size: 0.9rem;
+						}
+					}
+				}
+				.btn-container {
+					a {
+						transform: scale(0.9);
+					}
+				}
+			}
+		}
+
+		.social-container {
+			width: 100%;
+			margin: auto;
+
+			div {
+				width: 80%;
+				margin: auto;
+				display: flex;
+				justify-content: space-evenly;
+				a {
+					transform: scale(0.9);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.private-container {
+	display: flex;
+}
+.sidebar-container {
+	width: 200px;
+	display: flex;
+
+	&.close-sidebar {
+		width: 80px;
+	}
+}
+
+.main-container {
+	position: relative;
+	top: 0;
+	overflow: hidden;
+	overflow-y: hidden;
+	width: calc(100vw - 200px);
+	margin: auto;
+	padding-left: 3rem;
+	z-index: 10;
+	display: flex;
+
+	&.close-sidebar {
+		// width: calc(100vw - 80px);
+	}
+}

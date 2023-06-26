@@ -1,0 +1,17 @@
+#project_page {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-top: 5rem;
+	color: rgb(0, 110, 255);
+
+	.projects-container {
+		width: 100%;
+		.projects {
+			max-height: 700px;
+			overflow: scroll;
+		}
+	}
+}

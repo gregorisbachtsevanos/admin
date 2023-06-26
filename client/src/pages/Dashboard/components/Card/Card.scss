@@ -1,0 +1,23 @@
+@import "/src/assets/scss";
+
+.stats_card-container {
+	margin-top: 3rem;
+	width: 30%;
+	height: 200px;
+	background: linear-gradient(var(--highlight), var(--bgColor));
+	border-radius: 5px;
+	padding: 2rem;
+
+	.card-illustration {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.1;
+		.img {
+			height: 100%;
+			width: 70%;
+		}
+	}
+}

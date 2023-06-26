@@ -1,0 +1,26 @@
+@import "src/assets/scss";
+
+a {
+	width: 100%;
+	@include gradient();
+	align-items: center;
+	display: flex;
+
+	&.active {
+	}
+
+	.nav-icon {
+		height: 20px;
+		width: 30%;
+		margin: auto;
+	}
+
+	.nav-text {
+		width: 30%;
+		margin: auto;
+	}
+
+	&:hover {
+		background-color: transparent !important;
+	}
+}

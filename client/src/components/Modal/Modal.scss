@@ -1,0 +1,36 @@
+@import "./src/assets/scss";
+
+.modal-container {
+	position: absolute;
+	left: 50%;
+	top: 15%;
+	width: 60%;
+	height: 200px;
+	transform: translate(-60%, 0);
+	background-color: var(--bgColorOpacity);
+	@include border(5px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: var(--highlight);
+	z-index: 500;
+
+	&:has(.edit-modal-container) {
+		height: 400px !important;
+	}
+
+	.close-icon-container {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		img {
+			width: 30px;
+			transform: translate(10px, -10px);
+		}
+	}
+
+	.buttons-container {
+		display: flex;
+		justify-content: space-around;
+	}
+}

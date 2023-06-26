@@ -1,0 +1,16 @@
+.table-head_email {
+	width: 100%;
+	text-align: left;
+
+	tr {
+		width: 100%;
+
+		th {
+			width: 22%;
+			text-align: left;
+		}
+		:last-child {
+			text-align: right;
+		}
+	}
+}

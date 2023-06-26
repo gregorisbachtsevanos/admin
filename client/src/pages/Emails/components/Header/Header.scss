@@ -1,0 +1,26 @@
+@import "src/assets/scss";
+
+.emails_header-container {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid var(--highlight);
+	padding-bottom: 0.5rem;
+	background-color: var(--bgColor);
+	z-index: 1000;
+
+	.emails_submenu-container {
+		display: flex;
+		flex: 1;
+
+		.emails-tabs {
+			padding: 0.5rem;
+			color: var(--highlight);
+			cursor: pointer;
+
+			&.active {
+				background-color: var(--sidebarColor) !important;
+				border-radius: 10px;
+			}
+		}
+	}
+}

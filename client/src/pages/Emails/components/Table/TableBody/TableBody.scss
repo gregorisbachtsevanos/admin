@@ -1,0 +1,40 @@
+.table-body_email {
+	width: 100%;
+	text-align: left;
+	.table_data-container {
+		width: 100%;
+		.table_data {
+			text-align: left;
+			width: 22%;
+			padding: 0.5rem 0;
+			border-bottom: 1px solid var(--light);
+
+			&.content {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 100px;
+			}
+
+			&.remove {
+				width: 1px;
+				.remove_icon-container {
+					height: 15px;
+					&:hover {
+						animation: shake 1s;
+						animation-iteration-count: infinite;
+					}
+				}
+			}
+		}
+		.remove {
+			.remove_icon-container {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+	}
+}
+.unread {
+	background-color: #eaeaea28;
+}

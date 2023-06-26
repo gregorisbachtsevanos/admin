@@ -1,0 +1,53 @@
+@import "src/assets/scss";
+
+.submenu {
+	color: var(--textColor);
+	gap: 30px;
+	width: 20%;
+	background-color: var(--sidebarColor);
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 600px;
+
+	.personal_info-container {
+		@include flex();
+		align-items: flex-start;
+
+		.img-container {
+			width: 100%;
+			margin: auto;
+			img {
+				width: 60%;
+				clip-path: circle();
+				margin: auto;
+			}
+		}
+
+		.info-container {
+			margin: auto;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	.categories-container {
+		height: 300px;
+		@include flex();
+		gap: 20px;
+
+		.categories_submenu {
+			width: 100%;
+			.submenu-items {
+				padding: 0.5rem;
+				width: 100%;
+				border-radius: 5px;
+				cursor: pointer;
+				&.active {
+					background-color: var(--bgColor);
+				}
+			}
+		}
+	}
+}

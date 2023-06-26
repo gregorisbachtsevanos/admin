@@ -1,0 +1,181 @@
+@media only screen and (min-width: var(--4kvp)) {
+	.preloader-container {
+		height: 100%;
+
+		.precontainer {
+			display: flex;
+			align-items: center;
+			transform: scale(1.2);
+
+			.wr-preloader {
+				.items {
+					.ml5 {
+						display: flex;
+						justify-content: center;
+						transform: scale(1.3);
+					}
+				}
+			}
+		}
+	}
+
+	.sidebar-container {
+		height: 100%;
+		padding: 2%;
+		ul {
+			position: fixed;
+			left: 2%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			li {
+				margin: 50% 0;
+				transform: scale(1.5);
+				a {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.home-container {
+		.nav-container {
+			padding: 1%;
+			nav {
+				.logo-icon {
+					img {
+						transform: scale(1.4);
+					}
+				}
+				ul {
+					li {
+						transform: scale(1.4);
+					}
+				}
+			}
+		}
+
+		.text-container {
+			h2 {
+				margin-top: 15%;
+				.text-5xl {
+					font-size: 5rem;
+					span {
+						padding: 3% 0;
+					}
+				}
+				.text-2xl {
+					span {
+						padding: 5% 0;
+					}
+					font-size: 4rem;
+				}
+			}
+		}
+
+		.image-container {
+			img {
+				transform: scale(1.5);
+			}
+		}
+	}
+
+	.project-container {
+		.card {
+			.card-body {
+				h1,
+				a {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.about-container {
+		min-height: 1000px;
+		height: 100%;
+
+		.intro {
+			display: flex;
+			align-items: center;
+			.intro-container {
+				p {
+					font-size: 2rem;
+					line-height: 3rem;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.skills {
+			display: flex;
+			align-items: center;
+
+			.skills-container {
+				transform: scale(1.8);
+			}
+		}
+	}
+
+	.contact-container {
+		height: 100%;
+		min-height: 1000px;
+
+		.text-container {
+			display: flex;
+			align-items: center;
+
+			.intro-container {
+				P {
+					font-size: 2rem;
+					line-height: 3rem;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.contact-form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.form {
+				gap: 2rem;
+				flex-direction: column;
+				display: flex;
+
+				.email-container,
+				.text-container {
+					input {
+						font-size: 2rem;
+					}
+					label {
+						span {
+							font-size: 2rem;
+						}
+					}
+				}
+				.btn-container {
+					a {
+						transform: scale(2);
+					}
+				}
+			}
+		}
+
+		.social-container {
+			width: 100%;
+
+			div {
+				width: 80%;
+				margin: auto;
+				display: flex;
+				justify-content: space-evenly;
+				a {
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
+}

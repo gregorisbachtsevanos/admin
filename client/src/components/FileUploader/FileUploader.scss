@@ -1,0 +1,80 @@
+@import "src/assets/scss";
+
+.file-container {
+	width: 100%;
+	height: 130px;
+	@include flex();
+	border: 1px dashed var(--highlight);
+	background-color: var(--bgColor);
+	border-radius: 10px;
+
+	.image-preview {
+		display: flex;
+		.ReactCrop {
+			.ReactCrop__child-wrapper {
+				img {
+					height: 100px;
+				}
+			}
+		}
+		img {
+			height: 100px;
+		}
+	}
+
+	.file_option-title {
+		position: absolute;
+		color: var(--textColor);
+		@include flex();
+
+		&.change {
+			position: unset;
+			opacity: 0.4;
+			margin-top: 2%;
+		}
+
+		.error {
+			margin-top: 2rem;
+			font-size: 0.8rem;
+			color: var(--danger);
+		}
+	}
+
+	.file-input {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.image-preview {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+
+		.preview_image_src-container {
+			@include flex();
+			flex-direction: row;
+			gap: 5px;
+			.preview_image_src {
+			}
+		}
+
+		.preview_image_name-container {
+			gap: 5px;
+			@include flex();
+			align-items: flex-start;
+			gap: 5px;
+
+			.preview_image_name {
+				@include flex();
+				align-items: flex-start;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 150px;
+				font-size: 0.8rem;
+				color: var(--highlight);
+			}
+		}
+	}
+}

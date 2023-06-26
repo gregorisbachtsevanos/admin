@@ -1,0 +1,12 @@
+@import "src/assets/scss/";
+
+.edit-modal-container {
+	margin: auto;
+	width: 90%;
+	@include flex();
+	gap: 20px;
+
+	.item {
+		width: 100%;
+	}
+}

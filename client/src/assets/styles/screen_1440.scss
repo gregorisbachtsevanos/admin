@@ -1,0 +1,167 @@
+@media only screen and (min-width: var(--lVp)) {
+	.preloader-container {
+		.precontainer {
+			display: flex;
+			align-items: center;
+			transform: scale(1.1);
+
+			.wr-preloader {
+				.items {
+					.ml5 {
+						display: flex;
+						justify-content: center;
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+
+	.sidebar-container {
+		height: 100%;
+		ul {
+			position: fixed;
+			left: 2%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			li {
+				margin: 30% 0;
+				transform: scale(1);
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	.home-container {
+		.nav-container {
+			padding: 0%;
+			nav {
+				.logo-icon {
+					img {
+						transform: scale(1);
+					}
+				}
+				ul {
+					li {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+
+		.text-container {
+			h2 {
+				margin-top: 10%;
+				.text-5xl {
+					font-size: 3rem;
+				}
+				.text-2xl {
+					font-size: 2rem;
+				}
+			}
+		}
+
+		.image-container {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.project-container {
+		.card {
+			.card-body {
+				h1,
+				a {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.about-container {
+		min-height: unset;
+		height: 100%;
+
+		.intro {
+			.intro-container {
+				p {
+					font-size: 1rem;
+					line-height: 2.5rem;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.skills {
+			.skills-container {
+				transform: scale(1);
+			}
+		}
+	}
+
+	.contact-container {
+		height: 100%;
+		min-height: unset;
+		.text-container {
+			display: flex;
+			align-items: center;
+
+			.intro-container {
+				P {
+					font-size: 1rem;
+					line-height: 2.5rem;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.contact-form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.form {
+				gap: 1rem;
+				flex-direction: column;
+				display: flex;
+
+				.email-container,
+				.text-container {
+					input {
+						font-size: 1rem;
+					}
+					label {
+						span {
+							font-size: 1rem;
+						}
+					}
+				}
+				.btn-container {
+					a {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+
+		.social-container {
+			width: 100%;
+			margin: auto;
+
+			div {
+				width: 80%;
+				margin: auto;
+				display: flex;
+				justify-content: space-evenly;
+				a {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}

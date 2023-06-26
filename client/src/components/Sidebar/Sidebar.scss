@@ -1,0 +1,151 @@
+@import "src/assets/scss/";
+
+#sidebar-container {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 3%;
+	transition: 1s;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		var(--bgColor) 0%,
+		var(--sidebarColor) 100%
+	);
+
+	&.admin {
+		width: 15%;
+		display: flex;
+		flex-direction: column;
+
+		.logo-container {
+			position: relative;
+			@include flex();
+			margin-top: 30%;
+
+			.logo {
+				width: 35%;
+			}
+		}
+		.logout-container {
+			position: relative;
+			@include flex();
+			margin-bottom: 30%;
+
+			svg {
+				font-size: var(--secondHeaderSize);
+				color: var(--highlight);
+			}
+		}
+	}
+
+	ul {
+		position: fixed;
+		left: 1%;
+		height: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		// &.admin-sidebar {
+		// 	position: unset !important;
+		// 	width: 100%;
+		// 	margin-top: -50%;
+		// 	align-items: flex-start;
+		// }
+
+		li {
+			display: flex;
+			padding: 0.25rem;
+			margin: 1.25rem 0;
+			border-style: none;
+			@include border(1rem);
+			background: linear-gradient(
+				90deg,
+				var(--highlight1) 0%,
+				var(--highlight2) 100%
+			);
+
+			a {
+				padding: 0 0.75rem;
+				margin: auto;
+				cursor: pointer;
+			}
+
+			&.admin-link {
+				position: initial !important;
+				margin: 5% auto;
+				width: 90%;
+				border-bottom: 1px solid var(--highlight2);
+				border-radius: 0;
+				background: transparent;
+				@include gradient();
+				@include flex();
+
+				a {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+.menu-container {
+	display: flex;
+	width: 100%;
+
+	.sidebar {
+		width: 100%;
+		height: 100vh;
+		min-width: unset !important;
+		@include flex();
+		background-color: var(--sidebarColor);
+		border: none;
+
+		.logo-container {
+			width: 10%;
+			position: absolute;
+			top: 5%;
+			@include flex();
+
+			&.close-Sidebar {
+				width: 4%;
+			}
+			.logo-icon {
+				width: 70%;
+			}
+		}
+		.logout-container {
+			position: absolute;
+			bottom: 5%;
+			@include gradient();
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.logout-icon {
+				height: 20px;
+			}
+			.logout-text {
+				margin-left: 10px;
+			}
+		}
+
+		.menu {
+			height: 20%;
+			width: 100%;
+			@include flex();
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+	}
+
+	.collapseSidebar-container {
+		margin-top: 5px;
+		img {
+			@include gradient();
+			height: 25px;
+		}
+	}
+}

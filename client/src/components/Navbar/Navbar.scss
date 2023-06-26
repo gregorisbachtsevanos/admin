@@ -1,0 +1,45 @@
+.nav-container {
+	width: 90%;
+	margin: auto;
+	padding: 2.5rem 0;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-between;
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin: auto;
+
+		li {
+			&:nth-child(1) {
+				flex: 1;
+			}
+
+			button {
+				display: flex;
+			}
+
+			.lang-icon {
+				width: 90%;
+				padding: 0 20%;
+			}
+
+			img {
+				width: var(--firstHeaderSize);
+			}
+
+			button {
+				cursor: pointer;
+				font-size: var(--secondHeaderSize);
+				line-height: 2.2rem;
+
+				svg {
+					color: var(--highlight);
+				}
+			}
+		}
+	}
+}

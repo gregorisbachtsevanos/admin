@@ -1,0 +1,61 @@
+@import "src/assets/scss";
+
+.project_header-container {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid var(--highlight);
+	padding-bottom: 0.5rem;
+	background-color: var(--bgColor);
+	z-index: 1000;
+
+	.projects_submenu-container {
+		display: flex;
+		flex: 1;
+
+		li {
+			padding: 0 0.5rem;
+			@include gradient();
+		}
+	}
+
+	.projects_action-container {
+		display: flex;
+
+		div {
+			padding: 0 0.5rem;
+		}
+
+		.order-by {
+			background-color: var(--sidebarColor);
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			button {
+				display: flex;
+				align-items: center;
+				font-size: 0.7rem;
+				width: 110%;
+				height: 20px;
+				border-radius: 20px;
+				color: var(--highlight);
+
+				// color: var(--bgColor);
+				// background: linear-gradient(
+				// 	90deg,
+				// 	var(--highlight1) 0%,
+				// 	var(--highlight2) 100%
+				// );
+				img {
+					height: 15px;
+				}
+			}
+		}
+		.display-projects {
+			img {
+				height: 20px !important;
+			}
+		}
+	}
+}

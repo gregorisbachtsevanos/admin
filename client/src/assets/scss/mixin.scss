@@ -1,0 +1,17 @@
+@mixin border($value) {
+	border: none;
+	border-radius: $value;
+}
+
+@mixin flex() {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin gradient() {
+	background: -webkit-linear-gradient(var(--highlight1), var(--highlight2));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
