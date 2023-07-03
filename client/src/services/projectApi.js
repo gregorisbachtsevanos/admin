@@ -1,6 +1,6 @@
 import axios from "axios"
 import { SERVER_URL } from "src/app/data/data"
-import { accessToken, refreshToken } from '../utils/tokenFactory.js';
+import { accessToken, refreshToken } from 'src/utils/tokenFactory.js';
 
 export class ProjectService {
     // constructor(fetchService) {

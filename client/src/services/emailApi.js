@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { accessToken, refreshToken } from '../utils/tokenFactory.js';
+import { accessToken, refreshToken } from 'src/utils/tokenFactory.js';
 
 import { SERVER_URL } from "src/app/data/data"
 
